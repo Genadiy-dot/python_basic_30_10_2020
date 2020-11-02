@@ -17,8 +17,11 @@ while True:
         user_a = int(user_a)
         user_b = int(user_b)
 
-    while user_a <= user_b:
-        user_a *= 1.1 # увеличение числа а на 10 процентов
-        day +=1
+        while user_a <= user_b:
+            user_a *= 1.1 # увеличение числа а на 10 процентов
+            day += 1
 
-    print(day)
+        print(day)
+
+    else:
+        print('Ошибка ввода')
