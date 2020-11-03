@@ -13,7 +13,7 @@ while True:
     cost = input('Введите издержки фирмы: ')
     worker_count = input('Введите число сотрудников: ')
 
-    if proceeds.isdigit() and cost.isdigit():# корректный ввод числа
+    if proceeds.isdigit() and cost.isdigit() and worker_count.isdigit():   # корректный ввод числа
         proceeds = int(proceeds)
         cost = int(cost)
         worker_count = int(worker_count)
