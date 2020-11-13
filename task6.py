@@ -12,13 +12,13 @@
 
 def int_func(s):
 
-    res = []
+    res = []     # создали пустой список,куда внесем слова
     for i in s:
-        res.append(i[0].upper() + i[1:])
+        res.append(i[0].upper() + i[1:])  # меняем строчную букву в начале слова на заглавную
     return " ".join(res)
 
 
-my_str = input('Введите строку с пробелами: ').split()
+my_str = input('Введите строку с пробелами: ').split()   # ввод нескольких слов со строчных букв
 
 
 print(int_func(my_str))
