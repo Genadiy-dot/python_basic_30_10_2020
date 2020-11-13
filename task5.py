@@ -11,13 +11,13 @@
 
 def f():
     summ = 0
-    z = input().split()
-    for i in range(len(z)):
+    z = input().split()   #  ввод чисел в виде списка
+    for i in range(len(z)):  #  проходим список,пока не встретим наш позывной SOS
         if z[i] == 'SOS':
-            return summ, True
+            return summ, True   # как только встретили SOS,прекращаем итерацию
         if z[i].isdigit():
             z[i] = int(z[i])
-            summ += z[i]
+            summ += z[i]     # считаем сумму чисел до SOS
 
     return summ, False
 
