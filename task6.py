@@ -10,17 +10,18 @@
 Необходимо использовать написанную ранее функцию int_func().
 '''
 
-def int_func():
-    s = map(str,input().split())
-    res = list(s)
+def int_func(s):
+
+    res = []
     for i in s:
         res.append(i[0].upper() + i[1:])
-        return " ".join(res)
+    return " ".join(res)
 
 
-str = input('Введите строку с пробелами: ')
-res = int_func(str)
-print(res)
+my_str = input('Введите строку с пробелами: ').split()
+
+
+print(int_func(my_str))
 
 
 
