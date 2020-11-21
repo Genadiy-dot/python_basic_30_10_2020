@@ -12,11 +12,13 @@ my_f = "f_2.txt"
 #content = 0
 
 with open('f_2.txt', 'r') as f:  # применение менеджера контекста
-     f.read().split()   # чтение файла,разделение файла на слова
-     f.readlines()
-    #pos = 'out' # нахождение за пределами слова
+    words = f.read().split()   # чтение файла,разделение файла на слова
+    print('количество слов: ', len(words))
 
-    print('f.read().split(): ', f.read().split())
+with open('f_2.txt', 'r') as f: # применение менеджера контекста
+    lines = f.readlines()   # разделение файла на строки
+    print('количество строк ', len(lines))
 
 
-print('f.readlines(): ', f.readlines())
+
+
