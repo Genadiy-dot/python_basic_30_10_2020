@@ -4,7 +4,7 @@
  Об окончании ввода данных свидетельствует пустая строка.
 '''
 
-f = open('textfile.txt', 'w', encoding='utf-8')
+f = open('f_2.txt', 'w', encoding='utf-8')
 
 a = input()
 
