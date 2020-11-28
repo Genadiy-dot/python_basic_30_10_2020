@@ -20,21 +20,15 @@ class Matrix:
             print()
         return ''
 
-    '''2 варианта реализации __str__'''
 
-    # def __str__(self):
-    #     return '\n'.join(map(str, self.my_list))
 
-    # def __str__(self):
-    #     return str('\n'.join(['\t'.join([str(el) for el in i]) for i in self.my_list]))
-
-    def __add__(self, other):
+    def __add__(self, self_2):
         for i in range(len(self.my_list)):
-            for i_2 in range(len(other.my_list[i])):
-                self.my_list[i][i_2] = self.my_list[i][i_2] + other.my_list[i][i_2]
+            for i_2 in range(len(self_2.my_list[i])):
+                self.my_list[i][i_2] = self.my_list[i][i_2] + self_2.my_list[i][i_2]
         return Matrix.__str__(self)
 
 
-m = Matrix([[-1, 0, 1], [-1, 0, 1], [0, 1, -1], [1, 1, -1]])
-new_m = Matrix([[-2, 0, 2], [-2, 0, 2], [0, 2, -2], [2, 2, -7]])
+m = Matrix([[0, 0, 0], [-1, 1, 0], [0, 1, 0], [1, 0, 0]])
+new_m = Matrix([[1, 0, 1], [1, 0, 1], [1, 2, 1], [0, 2, 3]])
 print(m.__add__(new_m))
