@@ -28,7 +28,7 @@ class Clothes(ABC):
 
 class Coat(Clothes):
     def total(self):
-        return f'Для пошива пальто нужно: {self.param / 6.5 + 0.5 :.2f} ткани'
+        return f'Для пошива пальто нужно: {self.param / 6.5 + 0.5 :} ткани'
 
     def abstract(self):
         return 'Что-то очень абстрактное second'
