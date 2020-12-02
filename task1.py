@@ -23,7 +23,7 @@ class Data:
         try:
             day, month, year = data.split('-')
             int(year), int(month), int(day)
-            if int(year) > 0 or  1 <= int(month) <= 12 or 1 <= int(day) <=31:
+            if int(year) > 0 or  1 <= int(month) <= 12 or 1 <= int(day) <= 31:
                 return 'Есть такая дата!'
         except ValueError:
             return 'Указана неправильная дата!'
